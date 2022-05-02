@@ -1,3 +1,7 @@
+*{
+    margin:0px;
+}
+
 html,body{
     height:100%;
     margin:0px;
@@ -9,6 +13,7 @@ html,body{
     height:100%;
     font-family: 'Poppins', sans-serif;
     font-family: 'Quicksand', sans-serif;
+    overflow:none;
 }
 
 .left{
@@ -17,23 +22,28 @@ html,body{
     color: rgb(255, 255, 255);
 }
 
-img{
+#i{
 height:100%;
 }
 
-#kawaii{
+.dark{
+    display:flex;
+    flex-direction:column;
     position: absolute;
-    top: 75%;
+    top: 83%;
     left: 50%;
     text-align: center;
     width: 100%;
-    height: 50px;
+    height: 240px;
     transform: translate(-50%, -50%);
     background-color: rgb(0, 0, 0, 0.6);
     margin: 0px;
     display: flex;
     justify-content:center;
     font-size:40px;
+    align-items:center;
+    justify-content:center;
+    padding-bottom: 30px;
 }
 
 .right{
@@ -100,11 +110,39 @@ h2 > #header{
 
 input{
     border-style: none;
-    border: 1px solid black;
+    border: 1px solid #E5E7EB;
     border-radius: 2px;
+    outline: none;
 }
+
+#logo{
+    height: 100px;
+    width: auto;
+}
+
+#kawaii{
+    margin-bottom: 10px;
+}
+
 
 input:focus{
     border: 1px solid blue;
-    box-shadow: 0px 0px 5px rgb(0, 117, 138);
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+
+.error:required{
+    border: 1px solid red;
+}
+
+.error:valid{
+    border: 1px solid #E5E7EB;
+}
+
+.error:valid:focus{
+    border: 1px solid blue;
+}
+
+p{
+    margin: 0px;
 }
